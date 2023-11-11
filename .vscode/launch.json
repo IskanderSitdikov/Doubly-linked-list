@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Build and run C source",
+            "preLaunchTask": "run gcc",
+            "cwd": "${workspaceFolder}",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/a.exe"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "tasks": [
+        {
+            "label": "run gcc",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "-g"
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}

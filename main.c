@@ -114,6 +114,11 @@ int delete(struct DoublyLinkedList *list, char *string)
         list->last = node->previousNode;
         node->previousNode->nextNode = NULL;
     }
+    else
+    {
+        node->previousNode->nextNode = node->nextNode;
+        node->nextNode->previousNode = node->previousNode;
+    }
 
     free(node);
     return 0;
@@ -126,9 +131,9 @@ int main()
     insert(list, "item2");
     insert(list, "item3");
     // print(list);
-    delete (list, "item1");
-    // print(list);
     delete (list, "item2");
+    // print(list);
+    // delete (list, "item2");
     // print(list);
     // printNode(find(list, "item1"));
     // printNode(find(list, "item3"));
